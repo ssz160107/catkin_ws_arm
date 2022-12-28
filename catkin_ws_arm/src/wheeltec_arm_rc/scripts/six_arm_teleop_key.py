@@ -14,8 +14,8 @@ Moving around:
    m    ,    .
 
 Moving arm:
-   1    2    3   4   5   6   0
-   q    w    e   r   t   y   p
+   1    2    3   4   5   6   
+   q    w    e   r   t   y   
 
 a/z : increase/decrease max speeds by 10%
 s/x : increase/decrease only linear speed by 10%
@@ -45,10 +45,8 @@ rotateBindings = {
         '5':(5,1),
         't':(5,-1),
         '6':(6,1),
-        'y':(6,-1),
-        '0':(7,1),
-        'p':(7,-1)
-           }
+        'y':(6,-1)
+        }
 
 #键值对应精度增量
 precisionBindings={
@@ -93,7 +91,21 @@ turn  = 1   #默认转向速度 rad/s
 #以字符串格式返回当前控制精度
 def prec(speed,turn,precision):
     return "currently:\tspeed %s\tturn %s\ttprecision %s " %(speed,turn,precision)
-
+def limit1():
+    if joints[rotateBindings[key][0]-1]>1.57:
+             joints[rotateBindings[key][0]-1]=1.57
+    elif joints[rotateBindings[key][0]-1]<-1.57:
+             joints[rotateBindings[key][0]-1]=-1.57
+def limit2():
+    if joints[rotateBindings[key][0]]>0.7:
+             joints[rotateBindings[key][0]]=0.7
+    elif joints[rotateBindings[key][0]]<-0.3 :
+             joints[rotateBindings[key][0]]=-0.3
+def limit3():
+    if joints[rotateBindings[key][0]-1]>0.7:
+             joints[rotateBindings[key][0]-1]=0.7
+    elif joints[rotateBindings[key][0]-1]<-0.3:
+             joints[rotateBindings[key][0]-1]=-0.3           
 #主函数
 if __name__=="__main__":
     settings = termios.tcgetattr(sys.stdin) #获取键值初始化，读取终端相关属性
@@ -162,16 +174,19 @@ if __name__=="__main__":
                 control_turn  = 0
                 HorizonMove   = 0
                 count = 0
+            # elif key == '6' or key == 'y':
 
             #判断键值是在控制机械臂运动的键值内
             elif key in rotateBindings.keys():
                 count = 0
-                joints[rotateBindings[key][0]-1] = joints[rotateBindings[key][0]-1] + precision*rotateBindings[key][1]
-                if joints[rotateBindings[key][0]-1]>1.57:
-                    joints[rotateBindings[key][0]-1]=1.57
-                elif joints[rotateBindings[key][0]-1]<-1.57:
-                    joints[rotateBindings[key][0]-1]=-1.57
-              
+                if key == '6' or key == 'y':
+                    joints[rotateBindings[key][0]-1] = joints[rotateBindings[key][0]-1] + precision*rotateBindings[key][1]
+                    limit3()
+                    joints[rotateBindings[key][0]] = joints[rotateBindings[key][0]] + precision*rotateBindings[key][1]
+                    limit2()
+                else:
+                    joints[rotateBindings[key][0]-1] = joints[rotateBindings[key][0]-1] + precision*rotateBindings[key][1]
+                    limit1()
             #判断键值是否在精度增量键值内
             elif key in precisionBindings.keys():
                 count = 0

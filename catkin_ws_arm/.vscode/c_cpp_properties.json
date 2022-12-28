@@ -1,0 +1,58 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ssz/ws_rmrobot/devel/include/**",
+        "/home/ssz/wheeltec_arm/devel/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/devel/include/**",
+        "/home/ssz/demo18_action/devel/include/**",
+        "/home/ssz/demo15_server_client/devel/include/**",
+        "/home/ssz/demo14_pub_sub/devel/include/**",
+        "/home/ssz/demo12_ws/devel/include/**",
+        "/home/ssz/demo09_ws/devel/include/**",
+        "/home/ssz/demo08_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/ssz/demo15_server_client/src/action_test/include/**",
+        "/home/ssz/wheeltec_arm/src/arm_demo/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/can_debug_tools/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/can_driver/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/common/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/conveyor_interface/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/cpu_interface/include/**",
+        "/home/ssz/demo18_action/src/demo_action/include/**",
+        "/home/ssz/demo16_launch_test/src/demo_launch_test/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/dynamixel_sdk/include/**",
+        "/home/ssz/demo12_ws/src/robot_perception/ecto/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/end_effector_interface/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/joints_interface/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/mcp_can_rpi/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/niryo_robot_hardware_interface/include/**",
+        "/home/ssz/demo10_ws/src/probot_anno_ikfast_manipulator_plugin/include/**",
+        "/home/ssz/demo13_ws/src/probot_grasping/include/**",
+        "/home/ssz/demo11_ws/src/probot_vision/include/**",
+        "/home/ssz/demo14_pub_sub/src/pub_sub_test/include/**",
+        "/home/ssz/ws_rmrobot/src/rm_msgs/include/**",
+        "/home/ssz/demo12_ws/src/robot_perception/robot_voice/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/serial/include/**",
+        "/home/ssz/demo15_server_client/src/server_client_test/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/tools_interface/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/ttl_debug_tools/include/**",
+        "/home/ssz/catkin_ws_niryo_ned/src/niryo_robot_hardware_stack/ttl_driver/include/**",
+        "/home/ssz/demo15_server_client/src/turtle_test/include/**",
+        "/home/ssz/wheeltec_arm/src/wheeltec_arm_pick/include/**",
+        "/home/ssz/catkin_ws_arm/src/wheeltec_arm_rc/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
