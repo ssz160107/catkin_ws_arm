@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mini_4wd_six_arm
+    relative_path: urdf/mini_4wd_six_arm.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/mini_4wd_six_arm.srdf
+  CONFIG:
+    author_name: wheeltec
+    author_email: wheeltec@wheeltec.com
+    generated_timestamp: 1638530872

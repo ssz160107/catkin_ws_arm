@@ -1,0 +1,8 @@
+prefix=/home/ssz/catkin_ws_arm/install
+
+Name: mini_4wd_six_arm
+Description: Description of mini_4wd_six_arm
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,19 @@
+controller_list:
+  - name: arm_controller
+    action_ns: follow_joint_trajectory # 要与之前arbotix中设置的一致
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+  
+  - name: hand_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - joint6
+      - joint8

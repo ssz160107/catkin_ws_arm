@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ssz/catkin_ws_arm/devel/setup.sh

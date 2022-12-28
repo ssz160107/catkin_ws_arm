@@ -1,0 +1,8 @@
+<launch>
+	<!--是否开启底层节点-->
+	<arg name="base_node" default="yes"/>
+	<node pkg="wheeltec_arm_rc" type="six_arm_teleop_key.py" name="arm_teleop_keyboard"  output="screen">
+		<!-- <remap from="/joint_states" to="/arm_teleop"/> -->
+	</node>
+	<!-- <node if="$(eval base_node == 'yes')" pkg="wheeltec_arm_pick" type="wheeltec_six_arm" name="base_node" output="screen"/> -->
+</launch>

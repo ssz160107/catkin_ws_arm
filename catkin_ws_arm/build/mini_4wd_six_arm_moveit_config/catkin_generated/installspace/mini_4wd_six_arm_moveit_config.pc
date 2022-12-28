@@ -1,0 +1,8 @@
+prefix=/home/ssz/catkin_ws_arm/install
+
+Name: mini_4wd_six_arm_moveit_config
+Description: Description of mini_4wd_six_arm_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

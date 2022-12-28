@@ -1,0 +1,2 @@
+mini_4wd_six_arm:mini_4wd_six_arm_moveit_config:wheeltec_arm_rc
+-DCATKIN_DEVEL_PREFIX=/home/ssz/catkin_ws_arm/devel -DCMAKE_INSTALL_PREFIX=/home/ssz/catkin_ws_arm/install -G Unix Makefiles
